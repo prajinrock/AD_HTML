@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>ADMC TV - Content Acquisition System</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.min.css" rel="stylesheet">
+    <link href="css/inner_style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css/base.css">
+  </head>
+  <body>
+    <div class="loginWrap goRight">
+        <div class="loginBox">
+            <div class="loginSection">
+                <h2>SIGN IN</h2>
+                <div class="field-wrapper">
+                  <label for="lname" class="float_spl_label">Username</label>
+                  <input type="text" name="lname" placeholder="Username" />
+                </div>
+                <div class="field-wrapper">
+                  <label for="lname" class="float_spl_label">Password</label>
+                  <input type="password" name="lname" placeholder="Password" />
+                </div>
+                <button>
+                    ENTER
+                </button>
+                <div class="loginActions">
+                    <button>REGISTER NOW</button>
+                    <label>Forgot Password?</label>
+                </div>
+                
+            </div>
+            <div class="loginIntro">
+                <div class="introLanguage">
+                  عربى
+                <i class="fa fa-caret-left"></i>
+                </div>
+                <div class="introLogo">
+                    <img src="images/admc_logo_1.png">
+                </div>
+                <h2>TV Content Acquisition System</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere arcu non velit placerat interdum. Proin ornare vestibulum dolor, in hendrerit enim malesuada non. Nulla ut velit ac elit elementum aliquet. In in eros nisl. Sed sapien ex, dictum ac metus ac, varius mattis augue. Fusce et sagittis mi. Nullam pretium ex leo, eget finibus nibh ornare faucibus. Donec ullamcorper pulvinar aliquet. Nulla non massa at erat interdum posuere vel quis ligula. Donec rhoncus imperdiet eros, a ullamcorper augue vehicula nec. Maecenas in orci vel nulla tincidunt bibendum.</p>
+            </div>
+        </div>
+        <div class="copyRightInfo">© Abu Dhabi Media Company. All Rights Reserved</div>
+    </div>
+
+    <!-- JS  -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>     
+
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+    
+   <script>
+   $('#toggle').click(function() {
+       $('.outerDiv').show();
+  $('.slide-in').toggleClass('show');
+ // $('.slide_popup').toggleClass('show');
+  
+
+});
+
+$('#popclose').click(function() {
+  $('.slide-in').toggleClass('show');
+  $('.slide_popup').toggleClass('show');
+ $('.outerDiv').hide();
+});
+
+ 
+ $(function () 
+{
+  var onClass = "on";
+  var showClass = "show";
+
+  $("input, select")
+    .bind("checkval", function () 
+    {
+      var label = $(this).prev("label");
+        
+      if (this.value !== "")
+        label.addClass(showClass);
+        
+      else
+        label.removeClass(showClass);
+    })
+    .on("keyup", function () 
+    {
+      $(this).trigger("checkval");
+    })
+    .on("focus", function () 
+    {
+      $(this).prev("label").addClass(onClass);
+    })
+    .on("blur", function () 
+    {
+        $(this).prev("label").removeClass(onClass);
+    })
+    .on("change", function () 
+    {
+        $(this).trigger("checkval");
+    })
+    .trigger("checkval");
+    
+  $("select")
+    .on("change", function ()
+    {
+      var $this = $(this);
+      
+      if ($this.val() == "")
+        $this.addClass("watermark");
+      
+      else
+        $this.removeClass("watermark");
+        
+      $this.trigger("checkval");
+    })
+    .change();
+});
+   
+   
+ $('input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"]').each(function() {
+    var el = this, type = $(el).attr('type');
+    if ($(el).val() == '') $(el).attr('type', 'text');
+    $(el).focus(function() {
+        $(el).attr('type', type);
+        el.click();
+    });
+    $(el).blur(function() {
+        if ($(el).val() == '') $(el).attr('type', 'text');
+    });
+}); 
+
+    </script>
+  </body>
+</html>

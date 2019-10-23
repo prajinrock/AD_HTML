@@ -1,0 +1,38 @@
+//COLOR TEMPLATE
+$blueColor:#001a70;
+$grayColor:#5b6770;
+$greenColor:#628d1b;
+$greenTwo:#009ca6;
+$darkBlue:#00263e;
+$purpleColor:#5f2167;
+$orangeColor:#ff9e1b;
+$redColor:#ba0c2f;
+$violetColor:#aa0061;
+$white:#fff;
+$btnRed:#d56e83;
+//FONT STYLES
+$font: Tahoma, Geneva, sans-serif;
+$fontBold:bold;
+//FONT SIZE
+$textSmall:.75rem;
+$textNormal:.8125rem; //13px
+$textLarge:1rem; //16px
+$textTitle:1.25rem; //20px
+//OTHER PROPERTIES
+$flex:flex;
+$center:center;
+$fl_start:flex-start;
+$fl_end:flex-end;
+
+//TRANSITION
+$fxSmooth:all .3s;
+
+//Responsive
+$grid-breakpoints: (
+  xs: 0,
+  sm: 300px,
+  md: 768px,
+  lg: 992px,
+  xl: 1600px,
+  xxl: 2000px
+);
