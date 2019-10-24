@@ -1971,4 +1971,7 @@ body {
 .accordLevel_2 .panel-body {
   border: 1px solid #ececec; }
 
+.widgetBox .field-wrapper {
+  margin-bottom: 0px; }
+
 /*# sourceMappingURL=base.css.map */

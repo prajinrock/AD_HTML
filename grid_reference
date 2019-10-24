@@ -1,0 +1,5 @@
+var grid =  $('.grid-stack').data('gridstack');
+
+grid.addWidget($(html), 0, 0, 4, 1)
+
+var html='<div class="grid-stack-item  ui-draggable ui-resizable ui-resizable-autohide" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="1"><div class="grid-stack-item-content"><div class="field-wrapper"><label for="fname" class="float_spl_label">Proposal Request</label><input name="fname" type="text" placeholder="First Name" /></div></div></div>';
