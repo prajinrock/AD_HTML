@@ -2639,19 +2639,23 @@ body {
         border-top-color: rgba($blueColor, .2);
     }
 }
-.accordLevel_2{
-     .panel-heading{
+
+.accordLevel_2 {
+    .panel-heading {
         background-color: #ececec;
-        .panel-title{
+
+        .panel-title {
             color: $grayColor;
-            a{
-                .arrowBtn{
+
+            a {
+                .arrowBtn {
                     background-color: transparent;
-                    border:none;
-                    margin:0px;
+                    border: none;
+                    margin: 0px;
                     padding: 0px;
                     font-size: 15px;
-                    span{
+
+                    span {
                         width: 10px;
                         height: 10px;
                         display: block;
@@ -2663,27 +2667,122 @@ body {
                     }
                 }
             }
-            a.collapsed{
-                .arrowBtn{
-                    span{
+
+            a.collapsed {
+                .arrowBtn {
+                    span {
                         transform: rotate(45deg);
                     }
                 }
             }
         }
     }
-    .panel-group{
+
+    .panel-group {
         margin-bottom: 0px;
     }
-    .panel-default{
+
+    .panel-default {
         border-top-color: #ececec;
     }
-    .panel-body{
-        border:1px solid #ececec;
+
+    .panel-body {
+        border: 1px solid #ececec;
     }
 }
-.widgetBox{
-    .field-wrapper{
+
+.widgetBox {
+    .field-wrapper {
         margin-bottom: 0px;
     }
+}
+
+.similiar_section {
+    padding: 15px 5px;
+
+    .similiar_div {
+        width: 100%;
+        min-height: 100px;
+        border: 1px solid #e1e1e1;
+        padding: 15px;
+        display: flex;
+        position: relative;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+
+        .simImage {
+            width: 200px;
+            height: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+        .simContent{
+            width: calc(100% - 200px);
+            padding-left: 15px;
+            h3{
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+                font-weight: bold;
+                color: $blueColor;
+            }
+            p{
+                font-size: 14px;
+                color: $grayColor;
+                margin:0px;
+                padding: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            span{
+                display: block;
+                width: 100%;
+                color: $blueColor;
+                font-size: 15px;
+                label{
+                    color: $grayColor;
+                }
+            }
+        }
+        .simClose{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    }
+}
+.closeBtn{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin: 0px;
+    padding:0px;
+    border:none;
+    background-color: transparent;
+    transition: all .2s;
+    span{
+        display: block;
+        width: 16px;
+        position: absolute;
+        height: 1px;
+        transition: all .2s;
+        background-color: $grayColor;
+        &:nth-child(1){
+            transform: rotate(45deg);
+        }
+        &:nth-child(2){
+            transform: rotate(-45deg);
+        }
+        
+    }
+    &:hover{
+            background-color: rgba($blueColor, .2);
+            span{
+                background-color: $blueColor;
+            }
+        }
 }

@@ -1974,4 +1974,74 @@ body {
 .widgetBox .field-wrapper {
   margin-bottom: 0px; }
 
+.similiar_section {
+  padding: 15px 5px; }
+  .similiar_section .similiar_div {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    margin-bottom: 15px; }
+    .similiar_section .similiar_div:last-child {
+      margin-bottom: 0px; }
+    .similiar_section .similiar_div .simImage {
+      width: 200px;
+      height: auto; }
+      .similiar_section .similiar_div .simImage img {
+        width: 100%; }
+    .similiar_section .similiar_div .simContent {
+      width: calc(100% - 200px);
+      padding-left: 15px; }
+      .similiar_section .similiar_div .simContent h3 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #001a70; }
+      .similiar_section .similiar_div .simContent p {
+        font-size: 14px;
+        color: #5b6770;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .similiar_section .similiar_div .simContent span {
+        display: block;
+        width: 100%;
+        color: #001a70;
+        font-size: 15px; }
+        .similiar_section .similiar_div .simContent span label {
+          color: #5b6770; }
+    .similiar_section .similiar_div .simClose {
+      position: absolute;
+      right: 5px;
+      top: 5px; }
+
+.closeBtn {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  transition: all .2s; }
+  .closeBtn span {
+    display: block;
+    width: 16px;
+    position: absolute;
+    height: 1px;
+    transition: all .2s;
+    background-color: #5b6770; }
+    .closeBtn span:nth-child(1) {
+      transform: rotate(45deg); }
+    .closeBtn span:nth-child(2) {
+      transform: rotate(-45deg); }
+  .closeBtn:hover {
+    background-color: rgba(0, 26, 112, 0.2); }
+    .closeBtn:hover span {
+      background-color: #001a70; }
+
 /*# sourceMappingURL=base.css.map */
