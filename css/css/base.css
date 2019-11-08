@@ -1242,7 +1242,8 @@ body {
     height: calc(100% - 40px); } }
 
 .contentLimit {
-  height: calc(100% - 40px); }
+  height: calc(100% - 40px);
+  overflow-y: auto; }
 
 .footButtonGroup button {
   margin-right: 10px; }
@@ -2221,5 +2222,76 @@ input:checked + .slider:before {
 /* Handle on hover */
 .decisionHeight::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 26, 112, 0.7); }
+
+.customCheck {
+  margin-top: 25px;
+  font-size: 14px;
+  cursor: pointer; }
+
+.customCheck input[type="checkbox"]:checked:after, .customCheck .checkbox input[type="checkbox"]:checked:after, .customCheck .checkbox-inline input[type="checkbox"]:checked:after {
+  background-color: #b5b5b5;
+  border-color: #b5b5b5; }
+
+.customCheck input[type="checkbox"]:focus:after, .customCheck .checkbox input[type="checkbox"]:focus:after, .customCheck .checkbox-inline input[type="checkbox"]:focus:after {
+  border-color: #b5b5b5; }
+
+.formBtns {
+  margin-top: 25px; }
+  .formBtns .customBtn {
+    margin-right: 10px; }
+    .formBtns .customBtn:last-child {
+      margin-right: 0px; }
+
+.gridTbl {
+  margin-top: 25px;
+  padding: 0px; }
+
+.dashBG {
+  background-color: #f9f9f9;
+  border: 1px solid #e2e2e2; }
+  .dashBG .row .radioNone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none; }
+  .dashBG .row button {
+    width: 100%;
+    margin: 15px 5px;
+    text-align: left;
+    background-color: #e1e1e3;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #001a70;
+    transition: all .2s; }
+    .dashBG .row button:hover, .dashBG .row button:focus {
+      background-color: #fff; }
+    .dashBG .row button i {
+      background-color: #f1f1f3;
+      color: #5b6770;
+      border: none;
+      border-right: 1px solid #cfcfcf;
+      padding: 8px 8px;
+      margin-right: 8px;
+      font-size: 15px; }
+  .dashBG .row .col-xs-6:last-child button {
+    width: calc(100% - 10px); }
+
+.tableContainer .customTable1 tr td .customCheck {
+  margin: 0px; }
+
+.dashContainer .field-wrapper {
+  margin-top: 25px; }
+.dashContainer h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #001a70; }
+.dashContainer h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #5b6770; }
 
 /*# sourceMappingURL=base.css.map */

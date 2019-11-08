@@ -42,26 +42,11 @@
                             <ul class="nav side-menu menuBar">
                                 <li><a><i class="fa fa-dashboard"></i> <span class="spltxt">Dashboard</span></a>
                                 </li>
-                                <li>
-                                  <a>
-                                    <i class="fa fa-user"></i>
-                                    <span class="spltxt">Manage Suppliers</span>
-                                    <span class="fa fa-chevron-down"></span>
-                                  </a>
+                                <li><a><i class="fa fa-user"></i> <span class="spltxt">Manage Suppliers</span><span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="index.html">All Suppliers</a></li>
                                         <li><a href="index2.html">Supplier Category</a></li>
-                                        <li>
-                                          <a>
-                                            <span  class="spltxt">Next Level</span>
-                                            <span class="fa fa-chevron-down"></span>
-                                          </a>
-                                          <ul class="nav child_menu">
-                                              <li><a href="index.html">All Suppliers</a></li>
-                                              <li><a href="index2.html">Supplier Category</a></li>
-                                              <li><a href="index3.html">Sublink03</a></li>
-                                          </ul>
-                                        </li>
+                                        <li><a href="index3.html">Sublink03</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-gear"></i> <span class="spltxt">Manage Fields</span></a>
@@ -162,32 +147,61 @@
                     </div>
                     <div class="clearfix"></div>
                     <div class="box_content">
-                        <div class="outerDiv slide_popup slide-left" style=" display:none; width:40%;">
+                        <div class="outerDiv slide_popup slide-left slider40">
                             <div class="slide-in from-right">
                                 <div class="slide-in-content left_shadow">
                                     <div class="slideouter">
                                         <div class="slideHeader">
-                                            <h3>New Bundle</h3>
+                                            <h3>Add / Edit</h3>
                                             <a href="#" class="close" id="popclose"></a>
                                         </div>
-                                        <div class="container">
+                                        <div class="container_fluid dashBG">
+                                          <div class="row">
+                                            <div class="col-md-3 col-xs-6">
+                                              <button><i class="fa fa-pie-chart" aria-hidden="true"></i>Pie Graph</button>
+                                              <input type="radio" name="radio1" class="radioNone">
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                              <button><i class="fa fa-bar-chart" aria-hidden="true"></i>Pie Graph</button>
+                                              <input type="radio" name="radio1" class="radioNone">
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                              <button><i class="fa fa-circle-o-notch" aria-hidden="true"></i>Pie Graph</button>
+                                              <input type="radio" name="radio1" class="radioNone">
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                              <button><i class="fa fa-line-chart" aria-hidden="true"></i>Pie Graph</button>
+                                              <input type="radio" name="radio1" class="radioNone">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="container_fluid dashContainer">
                                             <div class="row">
                                                 <div class="col-xs-12">
+                                                    <h3>Chart Settings</h3>
+                                                </div>
+                                                <div class="col-xs-12">
                                                     <div class="field-wrapper">
-                                                        <label for="lname" class="float_spl_label">Bundle Name (English)</label>
-                                                        <input type="text" name="lname" placeholder="Bundle Name (English)" />
+                                                        <label for="lname" class="float_spl_label">Chart Name</label>
+                                                        <input type="text" name="lname" placeholder="Chart Name" />
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12">
                                                     <div class="field-wrapper">
-                                                        <label for="lname" class="float_spl_label">Bundle Name (Arabic)</label>
-                                                        <input type="text" name="lname" placeholder="Bundle Name (Arabic)" />
+                                                        <label for="lname" class="float_spl_label">X Axis</label>
+                                                        <input type="text" name="lname" placeholder="X Axis" />
                                                     </div>
                                                 </div>
-                                                <div class="col-xs-12 buttonsRight">
-                                                    <div class="btn-group">
-                                                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="false"><i class="fa fa-filter icon_right"></i></button>
+                                                <div class="col-xs-12">
+                                                    <div class="field-wrapper">
+                                                        <label for="lname" class="float_spl_label">Y Axis</label>
+                                                        <input type="text" name="lname" placeholder="Y Axis" />
                                                     </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                  <h4>Share With</h4>
+                                                </div>
+                                                <div class="col-xs-6 buttonsRight">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Search for...">
                                                         <span class="input-group-btn">
@@ -200,91 +214,49 @@
                                         <div class="tableContainer nopadding">
                                            <table class="customTable1 w100" border="1">
                                                <tr>
-                                                   <th class="col-xs-1"></a></th>
-                                                   <th class="col-xs-3">Title<a href="#"><i class="fa fa-caret-down"></i></a></th>
-                                                   <th class="col-xs-3">Supplier<a href="#"><i class="fa fa-caret-down"></i></a></th>
-                                                   <th class="col-xs-3">Genre<a href="#"><i class="fa fa-caret-down"></i></a></th>
-                                                   <th class="col-xs-2">Type<a href="#"><i class="fa fa-caret-down"></i></a></th>
+                                                   <th class="col-xs-1"></th>
+                                                   <th class="col-xs-3">Username<a href="#"><i class="fa fa-caret-down"></i></a></th>
                                                </tr>
                                                <tr>
                                                    <td>
-                                                       <input class="mdCheck" type="checkbox" name="">
+                                                       <label class="container customCheck">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
                                                    </td>
-                                                   <td>consectetur adipiscing</td>
-                                                   <td>incididunt</td>
-                                                   <td>voluptate</td>
-                                                   <td>occaecat</td>
+                                                   <td>John Doe</td>
                                                </tr>
                                                <tr>
                                                    <td>
-                                                       <input class="mdCheck" type="checkbox" name="">
+                                                       <label class="container customCheck">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
                                                    </td>
-                                                   <td>consectetur adipiscing</td>
-                                                   <td>incididunt</td>
-                                                   <td>voluptate</td>
-                                                   <td>occaecat</td>
+                                                   <td>John Doe</td>
                                                </tr>
                                                <tr>
                                                    <td>
-                                                       <input class="mdCheck" type="checkbox" name="">
+                                                       <label class="container customCheck">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
                                                    </td>
-                                                   <td>consectetur adipiscing</td>
-                                                   <td>incididunt</td>
-                                                   <td>voluptate</td>
-                                                   <td>occaecat</td>
+                                                   <td>John Doe</td>
                                                </tr>
                                            </table>
                                        </div>
                                     </div>
                                     <div class="slideFooterBtn">
-                                        <button class="customBtn blueBtn">Choose</button>
-                                        <button class="customBtn">Cancel</button>
+                                        <button class="customBtn blueBtn">Create / Update</button>
+                                        <button class="customBtn">Clear</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="content_full tabWrap">
-                            <div class="tableContainer">
-                                   <table class="customTable1 w100" border="1">
-                                       <tr>
-                                           <th class="col-xs-7">Bundle Name <a href="#"><i class="fa fa-caret-down"></i></a></th>
-                                           <th class="col-xs-3">No. of Proposals <a href="#"><i class="fa fa-caret-down"></i></a></th>
-                                           <th class="col-xs-1"></th>
-                                           <th class="col-xs-1"></th>
-                                       </tr>
-                                       <tr>
-                                           <td>Lorem ipsum dolor sit amet</td>
-                                           <td>35</td>
-                                           <td><button class="blueBtnTbl"><i class="fa fa-edit"></i></button></td>
-                                           <td><button class="deleteBtnTbl"><i class="fa fa-times"></i></button></td>
-                                       </tr>
-                                       <tr>
-                                           <td>Consectetur adipiscing elit</td>
-                                           <td>35</td>
-                                           <td><button class="blueBtnTbl"><i class="fa fa-edit"></i></button></td>
-                                           <td><button class="deleteBtnTbl"><i class="fa fa-times"></i></button></td>
-                                       </tr>
-                                       <tr>
-                                           <td>Nostrud exercitation ullamco</td>
-                                           <td>35</td>
-                                           <td><button class="blueBtnTbl"><i class="fa fa-edit"></i></button></td>
-                                           <td><button class="deleteBtnTbl"><i class="fa fa-times"></i></button></td>
-                                       </tr>
-                                       <tr>
-                                           <td>Commodo consequat</td>
-                                           <td>35</td>
-                                           <td><button class="blueBtnTbl"><i class="fa fa-edit"></i></button></td>
-                                           <td><button class="deleteBtnTbl"><i class="fa fa-times"></i></button></td>
-                                       </tr>
-                                       <tr>
-                                           <td>Excepteur sint occaecat cupidatat</td>
-                                           <td>35</td>
-                                           <td><button class="blueBtnTbl"><i class="fa fa-edit"></i></button></td>
-                                           <td><button class="deleteBtnTbl"><i class="fa fa-times"></i></button></td>
-                                       </tr>
-                                   </table>
-                               </div>
-                               <div class="footerBtnBox"><button class="customBtn greenBtn" id="toggle"><i class="fa fa-plus"></i> ADD NEW</button></div>
+                            
+                               <div class="footerBtnBox"><button class="customBtn greenBtn" id="toggle"><i class="fa fa-plus"></i> SLIDER</button></div>
                         </div>
                     </div>
                 </div>
